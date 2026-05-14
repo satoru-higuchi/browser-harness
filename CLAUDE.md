@@ -20,4 +20,5 @@ Reference docs:
 
 Hooks:
 - `.claude/hooks/session-start.sh` installs deps in remote sessions and exports `PYTHONPATH=src`.
-- `.claude/hooks/ruff-on-edit.sh` runs `ruff format` on edited `.py` files automatically.
+- `.claude/hooks/ruff-on-edit.sh` runs `ruff format` on edited `.py` files automatically.- One-time setup: `pip install pre-commit && pre-commit install`
+- Runs ruff format + ruff check --fix on staged files before each commit.
